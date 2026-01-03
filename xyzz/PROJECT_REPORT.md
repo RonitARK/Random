@@ -1431,8 +1431,8 @@ This script:
 
 **Solution:**
 - Used DECIMAL(10,2) in database for exact precision
-- BigDecimal in Java for financial calculations
-- Proper rounding to 2 decimal places
+- Double data type in Java with proper validation (suitable for this application scale)
+- Proper rounding to 2 decimal places for display
 
 #### Challenge 4: Foreign Key Constraints
 **Problem:** Deletion failures due to foreign key references
@@ -1448,9 +1448,9 @@ This script:
 **Problem:** Initial monolithic code mixing all layers
 
 **Solution:**
-- Refactored into layered architecture
-- Created distinct DAO, Service, and Presentation layers
-- Applied DAO pattern consistently
+- Implements layered architecture
+- Uses distinct DAO, Service, and Presentation layers
+- Applies DAO pattern consistently
 
 #### Challenge 2: Error Handling
 **Problem:** Generic error messages not helpful to users
